@@ -1,0 +1,15 @@
+// $myFont: Helvetica, sans-serif;
+// $myColor: red;
+// $myFontSize: 18px;
+// $myWidth: 680px;
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+$background-gray: #f2f4f7;
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('assets/fonts/Roboto-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}

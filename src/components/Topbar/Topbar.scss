@@ -1,3 +1,42 @@
+@use 'utilities/variables' as vars;
+
 .topbar-wrapper {
-  background-color: aqua;
+  font-family: 'Roboto';
+  background-color: vars.$background-gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 16px;
+
+  @media (min-width: vars.$tablet) {
+    height: 84px;
+    padding: 0 37px;
+  }
+
+  @media (min-width: vars.$desktop) {
+    padding: 0 68px;
+  }
+}
+
+.title {
+  font-weight: bold;
+}
+
+.topbar__navigation-wrapper {
+  font-family: 'Roboto';
+  display: none;
+  border-bottom: none;
+  background-color: vars.$background-gray;
+
+  @media (min-width: vars.$mobile) {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: vars.$tablet) {
+    gap: 30px;
+  }
 }

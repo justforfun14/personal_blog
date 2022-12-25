@@ -1,0 +1,16 @@
+@use 'utilities/variables' as vars;
+
+.burger-wrapper {
+  background-color: vars.$background-gray;
+  border: none;
+
+  @media (min-width: vars.$mobile) {
+    display: none;
+  }
+}
+
+.burger-items {
+  align-items: center;
+  justify-content: center;
+  border: none !important;
+}
